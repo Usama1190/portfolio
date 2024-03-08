@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- MAIN CONTAINER START -->
+    <div class="main-container">
+
+        <!-- CONTAINER START -->
+        <div class="container">
+
+            <!-- LEFT PAGE START -->
+            <div class="left-page">
+
+                <!-- LEFT NAVBAR START -->
+                <div class="left-nav">
+                    <a href="#">LOGO</a></li>
+                </div>
+                <!-- LEFT NAVBAR END -->
+
+                <div class="image">
+                    <img src="./assets/profile2.png" alt="Profile" class="left-img">
+                </div>
+            </div>
+            <!-- LEFT PAGE END -->
+
+            <!-- RIGHT PAGE START -->
+            <div class="right-page">
+                <div class="right-nav">
+                    <a href="#con1" id="home" class="active">HOME</a>
+                    <a href="#con2" id="port">PORTFOLIO</a>
+                    <a href="#con3" id="abo">ABOUT</a>
+                    <a href="#con4" id="ser">SERVICES</a>
+                    <a href="#con5" id="con">CONTACT</a>
+                </div>
+
+                <!-- CONTENT1 START -->
+                <div class="content" id="con1">
+                    <h1>Usama Israr</h1>
+                    <p>I'am a creative UI /UX designer and web developer with 
+                        extensive experience for over four years. My experties 
+                        is to create and design website.
+                    </p>
+
+                    <a href="#con5" class="btn"><b>Hire me</b></a>
+                </div>
+
+                <div class="content" id="con2">
+                    <h1>Portfolio</h1>
+                    <h4>Last Project:</h4>
+
+                    <a href="port-1.jpg"><img src="./assets/port-1.jpg" alt="website image" class="img"></a>
+                    <a href="port-2.jpg"><img src="./assets/port-2.jpg" alt="website image" class="img"></a>
+                    <a href="port-3.jpg"><img src="./assets/port-3.jpg" alt="website image" class="img"></a>
+                    <a href="port-4.jpg"><img src="./assets/port-4.jpg" alt="website image" class="img"></a>
+                </div>
+
+                <div class="content" id="con3">
+                    <h1>About</h1>
+                    <p>I'm a web Designer with extensive experience for over 4 
+                        years. My experrise is to create and website design, 
+                        graphic design, and many more...
+                    </p>
+
+                    <div class="bio">
+                        <p><b>Birthday</b> : May 09, 2004</p>
+                        <p><b>Age</b> : 20</p>
+                        <p><b>Degree</b> : BSSE (Software Engineering)</p>
+                        <p><b>Univercity</b> : University Of Karachi</p>
+                        <p><b>Education</b> : Undergraduation</p>
+                        <p><b>City</b> : Karachi, Pakistan</p>
+                    </div>
+                </div>
+
+                <div class="content" id="con4">
+                    <h1>Services</h1>
+                    <p></p>
+
+                    <a href="port-5.jpg"><img src="./assets/port-5.jpg" alt="website image" class="img animate"></a>
+                    <a href="port-6.jpg"><img src="./assets/port-6.jpg" alt="website image" class="img animate"></a>
+                    <a href="port-5.jpg"><img src="./assets/port-5.jpg" alt="website image" class="img animate"></a>
+                    <a href="port-6.jpg"><img src="./assets/port-6.jpg" alt="website image" class="img animate"></a>
+                </div>
+
+                <div class="content" id="con5">
+                    <h1>Contact</h1>
+                    <span class="fa fa-map-marker-alt icon"></span><span>Address : Nazimabad Block-2, Karachi, Pakistan.</span><br>
+                    <span class="fa fa-phone icon"></span><span>Phone : +92 307 174722 7 - +92 307174722 7</span><br>
+                    <span class="fa fa-envelope icon"></span><span>Email : usamaisrar1190@gmail.com</span><br>
+                    <span class="fa fa-globe-europe icon"></span><span>Website : www.domain.com</span>
+
+                    <p class="contact"><b>Follow</b> on your favourite <b>social media</b> platform:</p>
+                    <a href="#" class="fa fa-facebook" id="ani1"></a>
+                    <a href="#" class="fa fa-twitter" id="ani2"></a>
+                    <a href="#" class="fa fa-instagram" id="ani3"></a>
+                    <a href="#" class="fa fa-linkedin" id="ani4"></a>
+                </div>
+                <!-- CONTENT1 END -->
+            </div>
+            <!-- RIGHT PAGE END -->
+        </div>
+        <!-- CONTAINER END -->
+    </div>
+    <!-- MAIN CONTAINER END -->
+
+    <!-- JQUERY -->
+    <script>
+        $(document).ready(function () {
+            $("#home").click(function () {
+                $("#con1").show();
+                $("#con2").hide();
+                $("#con3").hide();
+                $("#con4").hide();
+                $("#con5").hide();
+                $("#home").css("border-bottom", "4px solid var(--color-4)");
+                $("#port").css("border-bottom", "none");
+                $("#abo").css("border-bottom", "none");
+                $("#ser").css("border-bottom", "none");
+                $("#con").css("border-bottom", "none");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#port").click(function () {
+                $("#con1").hide();
+                $("#con2").show();
+                $("#con3").hide();
+                $("#con4").hide();
+                $("#con5").hide();
+                $("#port").css("border-bottom", "4px solid var(--color-4)");
+                $("#home").css("border-bottom", "none");
+                $("#abo").css("border-bottom", "none");
+                $("#ser").css("border-bottom", "none");
+                $("#con").css("border-bottom", "none");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#abo").click(function () {
+                $("#con1").hide();
+                $("#con2").hide();
+                $("#con3").show();
+                $("#con4").hide();
+                $("#con5").hide();
+                $("#abo").css("border-bottom", "4px solid var(--color-4)");
+                $("#port").css("border-bottom", "none");
+                $("#home").css("border-bottom", "none");
+                $("#ser").css("border-bottom", "none");
+                $("#con").css("border-bottom", "none");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#ser").click(function () {
+                $("#con1").hide();
+                $("#con2").hide();
+                $("#con3").hide();
+                $("#con4").show();
+                $("#con5").hide();
+                $("#ser").css("border-bottom", "4px solid var(--color-4)");
+                $("#port").css("border-bottom", "none");
+                $("#abo").css("border-bottom", "none");
+                $("#home").css("border-bottom", "none");
+                $("#con").css("border-bottom", "none");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#con").click(function () {
+                $("#con1").hide();
+                $("#con2").hide();
+                $("#con3").hide();
+                $("#con4").hide();
+                $("#con5").show();
+                $("#con").css("border-bottom", "4px solid var(--color-4)");
+                $("#port").css("border-bottom", "none");
+                $("#abo").css("border-bottom", "none");
+                $("#ser").css("border-bottom", "none");
+                $("#home").css("border-bottom", "none");
+            });
+        });
+
+        $(document).ready(function () {
+            $(".btn").click(function () {
+                $("#con5").show();
+                $("#con").css("border-bottom", "4px solid var(--color-4)");
+                $("#con1").hide();
+                $("#home").css("border-bottom", "none");
+            });
+        });
+    </script>
+</body>
+</html>
